@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Services | Team Alpha Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F7F5F2;
+      color: #1C1C1C;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 bg-[#F2EFEA]/85 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto px-6 py-6 grid grid-cols-3 items-center text-[#3A3A3A]">
+
+    <!-- LEFT MENU -->
+    <ul class="flex space-x-10 text-sm tracking-wide">
+      <li><a href="index.html" class="hover:opacity-60 transition">Home</a></li>
+      <li><a href="about.html" class="hover:opacity-60 transition">About</a></li>
+      <li><a href="services.html" class="hover:opacity-60 transition">Services</a></li>
+      <li><a href="portfolio.html" class="hover:opacity-60 transition">Portfolio</a></li>
+    </ul>
+
+    <!-- LOGO CENTER -->
+    <div class="flex justify-center">
+      <img src="images/logo.jpeg" class="h-20 object-contain" alt="Team Alpha Logo" />
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="flex items-center justify-end space-x-6">
+
+      <!-- INSTAGRAM ICON -->
+      <a href="#" class="hover:opacity-60 transition">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             class="h-5 w-5"
+             fill="none"
+             viewBox="0 0 24 24"
+             stroke="currentColor">
+          <rect x="2" y="2" width="20" height="20" rx="5" />
+          <path d="M16 11.37a4 4 0 11-7.94 1.18A4 4 0 0116 11.37z"/>
+        </svg>
+      </a>
+
+      <!-- CONTACT BUTTON -->
+      <a href="contact.html"
+         class="border border-[#3A3A3A] px-6 py-2 text-xs tracking-wide
+                hover:bg-[#3A3A3A] hover:text-[#F2EFEA] transition">
+        Book a Consultation
+      </a>
+
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="pt-48 pb-32 text-center">
+  <h1 class="text-5xl mb-6">Our Services</h1>
+  <p class="text-sm max-w-xl mx-auto text-gray-600">
+    Thoughtfully crafted visual storytelling for weddings, celebrations, and legacy moments.
+  </p>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="max-w-7xl mx-auto px-6 space-y-40 pb-40">
+
+  <!-- SERVICE BLOCK -->
+  <div class="grid md:grid-cols-2 gap-20 items-center">
+    <img src="images/services/wedding.jpeg" class="w-full h-[520px] object-cover" />
+    <div>
+      <h2 class="text-3xl mb-6">Wedding</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Weddings are all about traditions, colors, laughter,happy tears, families and friends
+coming together to celebrate the union.
+      </p>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-20 items-center">
+    <div>
+      <h2 class="text-3xl mb-6">Pre Wedding </h2>
+      <p class="text-gray-700 leading-relaxed">
+        Step into a world of timeless elegance with our Fine Art Pre-Wedding Photography. We create dreamy,
+cinematic frames that blend natural light, exquisite styling, and genuine emotions. Every image is
+thoughtfully composed to reflect your unique love story with an artistic touch, making your memories
+look like a work of art. Perfect for couples who appreciate
+sophistication and storytelling through photography.
+
+      </p>
+    </div>
+    <img src="images/services/pre-wedding.jpeg" class="w-full h-[520px] object-cover" />
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-20 items-center">
+    <img src="images/services/haldi.jpeg" class="w-full h-[520px] object-cover" />
+    <div>
+      <h2 class="text-3xl mb-6">Haldi Ceremony</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Golden hues, pure joy, and heartfelt moments - the Haldi ceremony is all about vibrant traditions and raw emotions. From the playful splashes of turmeric to the candid laughter
+of loved ones, we capture every detail that makes this ritual so special. Every frame reflects the
+essence of love, blessings, and celebration.
+      </p>
+    </div>
+  </div>
+
+   <div class="grid md:grid-cols-2 gap-20 items-center">
+    <div>
+      <h2 class="text-3xl mb-6">Engagement </h2>
+      <p class="text-gray-700 leading-relaxed">
+      An engagement is more than a celebration - it's a promise. Our photography
+transforms these precious moments into elegant works of art, highlighting every
+emotion, every detail, and every memory. Because this is where your forever
+begins.
+      </p>
+    </div>
+    <img src="images/services/engagement.jpeg" class="w-full h-[520px] object-cover" />
+  </div>
+
+  <!-- IN HOUSE SERVICES -->
+  <div class="text-center max-w-3xl mx-auto">
+    <h2 class="text-3xl mb-8">In-House Other Services</h2>
+    <h3 class="text-3xl mb-6">Vivahasya - wedding planner & Decorer</h3>
+
+    <p class="text-gray-700 leading-relaxed">
+We are a team of passionate wedding planners and décor specialists dedicated to
+transforming your dream wedding into reality. From concept to execution, we curate every
+detail with precision and creativity, ensuring a seamless and stress-free experience for you.
+Our services include personalized wedding planning, theme conceptualization, venue
+styling, floral arrangements, lighting design, and bespoke décor setups. Whether you
+desire a traditional celebration, a luxurious extravaganza, or a contemporary chic affair, we
+bring your vision to life with elegance and sophistication.
+We believe every wedding is unique, and our mission is to create an unforgettable
+experience that reflects your personality, style, and love story. With our expertise, meticulous attention to detail, and strong vendor network, we ensure your big day is nothing
+short of magical.
+Your Vision. Our Expertise. A Wedding to Remember.
+
+www.vivahasya.in
+    </p>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="py-10 text-center text-xs text-gray-600">
+  © 2026 Team Alpha Photography
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Team Alpha Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F7F5F2;
+      color: #1C1C1C;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 bg-[#F2EFEA]/85 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto px-6 py-6 grid grid-cols-3 items-center text-[#3A3A3A]">
+
+    <!-- LEFT MENU -->
+    <ul class="flex space-x-10 text-sm tracking-wide">
+      <li><a href="index.html" class="hover:opacity-60 transition">Home</a></li>
+      <li><a href="about.html" class="hover:opacity-60 transition">About</a></li>
+      <li><a href="services.html" class="hover:opacity-60 transition">Services</a></li>
+      <li><a href="portfolio.html" class="hover:opacity-60 transition">Portfolio</a></li>
+    </ul>
+
+    <!-- LOGO CENTER -->
+    <div class="flex justify-center">
+      <img src="images/logo.jpeg" class="h-20 object-contain" alt="Team Alpha Logo" />
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="flex items-center justify-end space-x-6">
+
+      <!-- INSTAGRAM ICON -->
+      <a href="#" class="hover:opacity-60 transition">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             class="h-5 w-5"
+             fill="none"
+             viewBox="0 0 24 24"
+             stroke="currentColor">
+          <rect x="2" y="2" width="20" height="20" rx="5" />
+          <path d="M16 11.37a4 4 0 11-7.94 1.18A4 4 0 0116 11.37z"/>
+        </svg>
+      </a>
+
+      <!-- CONTACT BUTTON -->
+      <a href="contact.html"
+         class="border border-[#3A3A3A] px-6 py-2 text-xs tracking-wide
+                hover:bg-[#3A3A3A] hover:text-[#F2EFEA] transition">
+        Book a Consultation
+      </a>
+
+    </div>
+
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="h-screen pt-40 flex items-center justify-center bg-cover bg-center"
+  style="background-image:url('https://images.unsplash.com/photo-1523438885200-e635ba2c371e');">
+  <div class="bg-[#F7F5F2]/85 p-12 text-center max-w-xl">
+    <h1 class="text-5xl mb-4">Timeless Wedding Stories</h1>
+    <p class="text-sm text-gray-700">Luxury wedding photography capturing emotions and love</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="py-32 px-6 max-w-5xl mx-auto relative text-center">
+
+  <h2 class="text-3xl mb-20">Testimonials</h2>
+
+  <!-- LEFT ARROW -->
+  <button onclick="prevTestimonial()"
+    class="absolute left-0 top-1/2 -translate-y-1/2 text-3xl opacity-50 hover:opacity-100 transition">
+    ‹
+  </button>
+
+  <!-- RIGHT ARROW -->
+  <button onclick="nextTestimonial()"
+    class="absolute right-0 top-1/2 -translate-y-1/2 text-3xl opacity-50 hover:opacity-100 transition">
+    ›
+  </button>
+
+  <!-- TESTIMONIALS -->
+  <div id="testimonialContainer">
+
+    <div class="testimonial">
+      <p class="text-xl leading-relaxed mb-6">
+        “Team Alpha didn’t just photograph our wedding — they preserved our emotions.
+        Every image feels alive even years later.”
+      </p>
+      <p class="text-sm uppercase tracking-wide">— Hannah & Bronson</p>
+    </div>
+
+    <div class="testimonial hidden">
+      <p class="text-xl leading-relaxed mb-6">
+        “Their presence was calming, their eye was exceptional.
+        We trusted them completely — and the results were beyond anything we imagined.”
+      </p>
+      <p class="text-sm uppercase tracking-wide">— Rachel & Matt</p>
+    </div>
+
+    <div class="testimonial hidden">
+      <p class="text-xl leading-relaxed mb-6">
+        “Every glance, every laugh, every quiet moment —
+        they captured it all without us ever noticing the camera.”
+      </p>
+      <p class="text-sm uppercase tracking-wide">— Sarah & Wells</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- REAL WEDDINGS SECTION -->
+<section class="py-32 px-6 max-w-7xl mx-auto">
+
+  <h2 class="text-3xl text-center mb-20">Real Weddings</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
+
+    <!-- Hannah & Bronson -->
+    <a href="albums/hannah-bronson.html" class="group block">
+      <div class="border border-black p-6 transition group-hover:opacity-80">
+        <img
+          src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e"
+          class="w-full h-[420px] object-cover mb-8"
+          alt="Hannah and Bronson Wedding"
+        />
+        <h3 class="text-xl mb-2">Hannah & Bronson</h3>
+        <p class="text-sm text-gray-600">
+          Casa Lago Estate<br>Beverly Hills, California
+        </p>
+      </div>
+    </a>
+
+    <!-- Rachel & Matt -->
+    <a href="albums/rachel-matt.html" class="group block">
+      <div class="border border-black p-6 transition group-hover:opacity-80">
+        <img
+          src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+          class="w-full h-[420px] object-cover mb-8"
+          alt="Rachel and Matt Wedding"
+        />
+        <h3 class="text-xl mb-2">Rachel & Matt</h3>
+        <p class="text-sm text-gray-600">
+          Rosewood Miramar<br>Montecito, California
+        </p>
+      </div>
+    </a>
+
+    <!-- Sarah & Wells -->
+    <a href="albums/sarah-wells.html" class="group block">
+      <div class="border border-black p-6 transition group-hover:opacity-80">
+        <img
+          src="https://images.unsplash.com/photo-1519741497674-611481863552"
+          class="w-full h-[420px] object-cover mb-8"
+          alt="Sarah and Wells Wedding"
+        />
+        <h3 class="text-xl mb-2">Sarah & Wells</h3>
+        <p class="text-sm text-gray-600">
+          Sunstone Winery<br>Solvang, California
+        </p>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- VIEW MORE BUTTON -->
+  <div class="mt-20 flex justify-end">
+    <a href="portfolio.html"
+       class="border border-black px-8 py-3 text-sm hover:bg-black hover:text-white transition">
+      View More Real Weddings
+    </a>
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="py-10 text-center text-xs text-gray-600">
+  © 2026 Team Alpha Photography
+</footer>
+
+<script>
+  let currentTestimonial = 0;
+  const testimonials = document.querySelectorAll('.testimonial');
+
+  function showTestimonial(index) {
+    testimonials.forEach(t => t.classList.add('hidden'));
+    testimonials[index].classList.remove('hidden');
+  }
+
+  function nextTestimonial() {
+    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+    showTestimonial(currentTestimonial);
+  }
+
+  function prevTestimonial() {
+    currentTestimonial =
+      (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(currentTestimonial);
+  }
+</script>
+
+</body>
+</html>

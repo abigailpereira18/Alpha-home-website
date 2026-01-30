@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio | Team Alpha Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F7F5F2;
+      color: #1C1C1C;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 bg-[#F2EFEA]/85 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto px-6 py-6 grid grid-cols-3 items-center text-[#3A3A3A]">
+
+    <!-- LEFT MENU -->
+    <ul class="flex space-x-10 text-sm tracking-wide">
+      <li><a href="index.html" class="hover:opacity-60 transition">Home</a></li>
+      <li><a href="about.html" class="hover:opacity-60 transition">About</a></li>
+      <li><a href="services.html" class="hover:opacity-60 transition">Services</a></li>
+      <li><a href="portfolio.html" class="hover:opacity-60 transition">Portfolio</a></li>
+    </ul>
+
+    <!-- LOGO CENTER -->
+    <div class="flex justify-center">
+      <img src="images/logo.jpeg" class="h-20 object-contain" alt="Team Alpha Logo" />
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="flex items-center justify-end space-x-6">
+
+      <!-- INSTAGRAM ICON -->
+      <a href="#" class="hover:opacity-60 transition">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             class="h-5 w-5"
+             fill="none"
+             viewBox="0 0 24 24"
+             stroke="currentColor">
+          <rect x="2" y="2" width="20" height="20" rx="5" />
+          <path d="M16 11.37a4 4 0 11-7.94 1.18A4 4 0 0116 11.37z"/>
+        </svg>
+      </a>
+
+      <!-- CONTACT BUTTON -->
+      <a href="contact.html"
+         class="border border-[#3A3A3A] px-6 py-2 text-xs tracking-wide
+                hover:bg-[#3A3A3A] hover:text-[#F2EFEA] transition">
+        Book a Consultation
+      </a>
+
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="pt-44 pb-24 text-center">
+  <h1 class="text-5xl mb-6">Portfolio</h1>
+  <p class="text-sm text-gray-600 max-w-xl mx-auto">
+    A curated collection of wedding stories told through photographs.
+  </p>
+</section>
+
+<!-- PORTFOLIO GRID -->
+<section class="pb-40 px-6 max-w-7xl mx-auto">
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+
+    <!-- Hannah & Bronson -->
+    <a href="albums/hannah-bronson.html" class="group block">
+      <div class="border border-black p-4 transition group-hover:opacity-80">
+        <img
+          src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e"
+          class="w-full h-[340px] object-cover mb-6"
+        />
+        <h3 class="text-lg">Hannah & Bronson</h3>
+        <p class="text-xs text-gray-600">Beverly Hills, USA</p>
+      </div>
+    </a>
+
+    <!-- Rachel & Matt -->
+    <a href="albums/rachel-matt.html" class="group block">
+      <div class="border border-black p-4 transition group-hover:opacity-80">
+        <img
+          src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+          class="w-full h-[340px] object-cover mb-6"
+        />
+        <h3 class="text-lg">Rachel & Matt</h3>
+        <p class="text-xs text-gray-600">Montecito, USA</p>
+      </div>
+    </a>
+
+    <!-- Sarah & Wells -->
+    <a href="albums/sarah-wells.html" class="group block">
+      <div class="border border-black p-4 transition group-hover:opacity-80">
+        <img
+          src="https://images.unsplash.com/photo-1519741497674-611481863552"
+          class="w-full h-[340px] object-cover mb-6"
+        />
+        <h3 class="text-lg">Sarah & Wells</h3>
+        <p class="text-xs text-gray-600">California, USA</p>
+      </div>
+    </a>
+
+    <!-- Ava & Daniel -->
+    <a href="albums/ava-daniel.html" class="group block">
+      <div class="border border-black p-4 transition group-hover:opacity-80">
+        <img
+          src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91"
+          class="w-full h-[340px] object-cover mb-6"
+        />
+        <h3 class="text-lg">Ava & Daniel</h3>
+        <p class="text-xs text-gray-600">Venice, Italy</p>
+      </div>
+    </a>
+
+  </div>
+
+</section>
+
+
+    <!-- Duplicate this pattern up to 20 -->
+  </div>
+
+</section>
+
+<!-- GALLERY OVERLAY -->
+<div id="galleryOverlay"
+  class="fixed inset-0 bg-black/95 z-50 hidden flex flex-col">
+
+  <!-- CLOSE -->
+  <button onclick="closeGallery()"
+    class="absolute top-6 right-8 text-white text-3xl">✕</button>
+
+  <!-- IMAGES -->
+  <div id="galleryImages"
+    class="mt-24 px-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 overflow-y-auto pb-20">
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="py-10 text-center text-xs text-gray-600">
+  © 2026 Team Alpha Photography
+</footer>
+
+<!-- SCRIPT -->
+<script>
+  const albums = {
+    album1: [
+      "https://images.unsplash.com/photo-1523438885200-e635ba2c371e",
+      "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
+      "https://images.unsplash.com/photo-1519741497674-611481863552"
+    ],
+    album2: [
+      "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
+      "https://images.unsplash.com/photo-1511285560929-80b456fea0bc",
+      "https://images.unsplash.com/photo-1526045612212-70caf35c14df"
+    ],
+    album3: [
+      "https://images.unsplash.com/photo-1495567720989-cebdbdd97913",
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+      "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6"
+    ],
+    album4: [
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+      "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92",
+      "https://images.unsplash.com/photo-1523438885200-e635ba2c371e"
+    ]
+  };
+
+  function openGallery(album) {
+    const container = document.getElementById("galleryImages");
+    container.innerHTML = "";
+
+    albums[album].forEach(img => {
+      const image = document.createElement("img");
+      image.src = img;
+      image.className = "w-full h-[420px] object-cover";
+      container.appendChild(image);
+    });
+
+    document.getElementById("galleryOverlay").classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeGallery() {
+    document.getElementById("galleryOverlay").classList.add("hidden");
+    document.body.style.overflow = "auto";
+  }
+</script>
+
+</body>
+</html>
